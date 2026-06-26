@@ -1,0 +1,10 @@
+{
+  "name": "dashboard-page-ui",
+  "description": "A simple UI page designing out of JSON data",
+  "type": "module",
+  "author": {
+    "name": "Logesh",
+    "email": "webdesignkaar@gmail.com"
+  },
+  "version": "1.0.0"
+}

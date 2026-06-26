@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "message": "Dashboard data fetched successfully",
+  "data": {
+    "user": {
+      "id": "USR10245",
+      "name": "Logesh",
+      "email": "logesh@example.com",
+      "phone": "+91-9876543210",
+      "profileImage": "https://example.com/images/users/logesh.jpg",
+      "membership": "Gold",
+      "joinedDate": "2024-01-15",
+      "location": {
+        "city": "Bangalore",
+        "country": "India"
+      }
+    },
+    "dashboard": {
+      "totalBookings": 18,
+      "completedBookings": 15,
+      "upcomingBookings": 2,
+      "cancelledBookings": 1,
+      "walletBalance": 3250.75,
+      "rewardPoints": 1450
+    },
+    "recentBookings": [
+      {
+        "bookingId": "BK1001",
+        "service": "Hotel Booking",
+        "location": "Goa",
+        "date": "2026-06-10",
+        "amount": 8500,
+        "status": "Completed"
+      },
+      {
+        "bookingId": "BK1002",
+        "service": "Flight Booking",
+        "location": "Delhi",
+        "date": "2026-07-05",
+        "amount": 5200,
+        "status": "Upcoming"
+      }
+    ],
+    "notifications": [
+      {
+        "id": 1,
+        "title": "Special Offer",
+        "message": "Get 20% discount on your next booking.",
+        "isRead": false
+      },
+      {
+        "id": 2,
+        "title": "Booking Confirmed",
+        "message": "Your hotel booking for Goa has been confirmed.",
+        "isRead": true
+      }
+    ],
+    "quickActions": [
+      "Book Hotel",
+      "Book Flight",
+      "View Wallet",
+      "Manage Profile"
+    ]
+  },
+  "meta": {
+    "requestId": "REQ987654321",
+    "timestamp": "2026-06-26T10:45:30Z",
+    "version": "1.0.0"
+  }
+}
