@@ -1,10 +1,22 @@
 {
-  "name": "dashboard-page-ui",
-  "description": "A simple UI page designing out of JSON data",
+  "name": "dashboard-page",
+  "version": "1.0.0",
+  "description": "Dashboard UI for practice",
+  "main": "script.js",
   "type": "module",
-  "author": {
-    "name": "Logesh",
-    "email": "webdesignkaar@gmail.com"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.0"
+  "repository": {
+    "type": "git",
+    "url": "github-work:kaar-codes/dashboard-page-ui.git"
+  },
+  "author": "Logesh",
+  "license": "ISC",
+  "dependencies": {
+    "@boxicons/js": "^1.0.1"
+  },
+  "devDependencies": {
+    "vite": "^8.1.4"
+  }
 }
