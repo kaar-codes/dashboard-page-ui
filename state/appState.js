@@ -1,4 +1,5 @@
 import info from "../data/dashboard.json" with { type: "json" };
+import {Enterprise, PlaneAlt, WalletNote, User} from "@boxicons/js"
 
 function StatsCardData(input) {
   this.totalBookings = input.totalBookings;
@@ -36,3 +37,8 @@ function RecentBookingsData(input) {
 }
 
 export const recentBookingsData = info.data.recentBookings.map(val=> new RecentBookingsData(val))
+
+export const quickActionsData = info.data.quickActions.map((val,index)=> {
+  const icon = [Enterprise,PlaneAlt,WalletNote,User].at(index)
+  return {icon, label: val}
+})
