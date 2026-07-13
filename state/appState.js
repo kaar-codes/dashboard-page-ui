@@ -1,5 +1,5 @@
 import info from "../data/dashboard.json" with { type: "json" };
-import {Enterprise, PlaneAlt, WalletNote, User} from "@boxicons/js"
+import { Enterprise, PlaneAlt, WalletNote, User } from "@boxicons/js";
 
 function StatsCardData(input) {
   this.totalBookings = input.totalBookings;
@@ -28,17 +28,21 @@ function StatsCardData(input) {
 export const statsData = new StatsCardData(info.data.dashboard);
 
 function RecentBookingsData(input) {
-  this.bookingId = input.bookingId,
-  this.service = input.service,
-  this.date = input.date,
-  this.location = input.location,
-  this.amount = input.amount,
-  this.status = input.status
+  ((this.bookingId = input.bookingId),
+    (this.service = input.service),
+    (this.date = input.date),
+    (this.location = input.location),
+    (this.amount = input.amount),
+    (this.status = input.status));
 }
 
-export const recentBookingsData = info.data.recentBookings.map(val=> new RecentBookingsData(val))
+export const recentBookingsData = info.data.recentBookings.map(
+  (val) => new RecentBookingsData(val),
+);
 
-export const quickActionsData = info.data.quickActions.map((val,index)=> {
-  const icon = [Enterprise,PlaneAlt,WalletNote,User].at(index)
-  return {icon, label: val}
-})
+export const quickActionsData = info.data.quickActions.map((val, index) => {
+  const icon = [Enterprise, PlaneAlt, WalletNote, User].at(index);
+  return { icon, label: val };
+});
+
+export const notificationData = info.data.notifications;
