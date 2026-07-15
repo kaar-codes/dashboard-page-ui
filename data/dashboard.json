@@ -53,12 +53,6 @@
         "title": "Booking Confirmed",
         "message": "Your hotel booking for Goa has been confirmed.",
         "isRead": true
-      },
-      {
-        "id": 1,
-        "title": "Special Offer",
-        "message": "Get 20% discount on your next booking.",
-        "isRead": false
       }
     ],
     "quickActions": [
