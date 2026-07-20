@@ -7,9 +7,11 @@ import {
   NotificationComponent,
   NotificationDetailComponent,
 } from "./components/Notification.js";
+import { SideNavBarComponent } from "./components/SideNavigation.js";
 
 root.append(NotificationComponent());
 root.append(StatsCardComponent());
 root.append(RecentBookingsComponent());
 root.append(NotificationDetailComponent());
 root.append(QuickActionsComponent());
+root.append(SideNavBarComponent());

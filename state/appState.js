@@ -1,5 +1,17 @@
 import info from "../data/dashboard.json" with { type: "json" };
-import { Enterprise, PlaneAlt, WalletNote, User } from "@boxicons/js";
+import {
+  Enterprise,
+  PlaneAlt,
+  WalletNote,
+  User,
+  Home,
+  CalendarDetail,
+  Discount,
+  Bell,
+  Cog,
+  HelpCircle,
+  ArrowOutRightSquareHalf,
+} from "@boxicons/js";
 
 function StatsCardData(input) {
   this.totalBookings = input.totalBookings;
@@ -46,3 +58,17 @@ export const quickActionsData = info.data.quickActions.map((val, index) => {
 });
 
 export const notificationData = info.data.notifications;
+
+export const sideNavigationData = new Map([
+  ["dashboard", Home],
+  ["bookings", CalendarDetail],
+  ["flights", PlaneAlt],
+  ["hotels", Enterprise],
+  ["wallet", WalletNote],
+  ["offers", Discount],
+  ["notifications", Bell],
+  ["profile", User],
+  ["settings", Cog],
+  ["help & support", HelpCircle],
+  ["logout", ArrowOutRightSquareHalf],
+]);

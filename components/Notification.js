@@ -37,8 +37,6 @@ ${icon}
   data.map((current) => {
     const parser = new DOMParser();
     const doc = parser.parseFromString(current, "text/html");
-    console.log(doc);
-    console.log(current);
     container.append(doc.body.firstChild);
   });
 
