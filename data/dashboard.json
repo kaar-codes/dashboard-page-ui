@@ -16,7 +16,7 @@
       }
     },
     "dashboard": {
-      "totalBookings": 18,
+      "totalBookings": 30,
       "completedBookings": 15,
       "upcomingBookings": 2,
       "cancelledBookings": 1,

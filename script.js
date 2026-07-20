@@ -1,7 +1,17 @@
 "use strict";
 
-import { StatsCardComponent } from "./Components/StatsComponent.js";
+import { StatsCardComponent } from "./components/StatsComponent.js";
+import { RecentBookingsComponent } from "./components/RecentBookings.js";
+import { QuickActionsComponent } from "./components/QuickActions.js";
+import {
+  NotificationComponent,
+  NotificationDetailComponent,
+} from "./components/Notification.js";
+import { SideNavBarComponent } from "./components/SideNavigation.js";
 
-const root = document.getElementById("root");
-
+root.append(NotificationComponent());
 root.append(StatsCardComponent());
+root.append(RecentBookingsComponent());
+root.append(NotificationDetailComponent());
+root.append(QuickActionsComponent());
+root.append(SideNavBarComponent());
